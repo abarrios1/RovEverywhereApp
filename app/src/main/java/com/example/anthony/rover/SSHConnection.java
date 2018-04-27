@@ -18,15 +18,19 @@ public class SSHConnection {
     JSch jSch = new JSch();
     Properties config = new Properties();
 
-    public SSHConnection() throws Exception {
-        config.put("StrictHostKeyChecking", "no");
+    public SSHConnection() {
+        try {
+            config.put("StrictHostKeyChecking", "no");
 
-        session = jSch.getSession("username", "ipAddress");
-        session.setConfig(config);
-        session.setPassword("password");
-        session.connect();
+            session = jSch.getSession("pi", "192.168.12.1");
+            session.setConfig(config);
+            session.setPassword("green");
+            session.connect();
 
-        channel = (ChannelExec) session.openChannel("exec");
+            channel = (ChannelExec) session.openChannel("exec");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void close() {

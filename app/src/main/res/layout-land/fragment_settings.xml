@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.anthony.rover.Settings"
-    android:screenOrientation="portrait">
+    tools:context="com.example.anthony.rover.Settings">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -16,9 +15,9 @@
             android:id="@+id/restart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            android:layout_marginStart="92dp"
-            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginBottom="24dp"
+            android:layout_marginStart="188dp"
+            android:backgroundTint="@android:color/holo_green_light"
             android:text="Restart"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -27,10 +26,10 @@
             android:id="@+id/shutdown"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
+            android:layout_marginBottom="24dp"
             android:layout_marginEnd="68dp"
             android:layout_marginStart="8dp"
-            android:backgroundTint="#6CBEFD"
+            android:backgroundTint="@android:color/holo_red_light"
             android:text="Shutdown"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +40,7 @@
             android:id="@+id/lighton"
             android:layout_width="73dp"
             android:layout_height="78dp"
-            android:layout_marginStart="116dp"
+            android:layout_marginStart="140dp"
             android:layout_marginTop="16dp"
             android:background="@color/trans"
             android:scaleType="fitCenter"
@@ -60,31 +59,32 @@
             android:scaleType="fitCenter"
             android:src="@drawable/lightoff"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.307"
+            app:layout_constraintHorizontal_bias="0.067"
             app:layout_constraintStart_toEndOf="@+id/lighton"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
             android:id="@+id/honk"
-            android:layout_width="158dp"
-            android:layout_height="131dp"
-            android:layout_marginBottom="40dp"
+            android:layout_width="138dp"
+            android:layout_height="107dp"
+            android:layout_marginBottom="12dp"
             android:background="@color/trans"
-            android:backgroundTint="@color/white"
             android:scaleType="fitCenter"
             android:src="@drawable/honk"
             app:layout_constraintBottom_toTopOf="@+id/shutdown"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.777"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/colorPick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="12dp"
             android:background="@color/white"
             android:text="Change Color"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.352"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lightoff" />
 

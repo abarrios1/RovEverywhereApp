@@ -72,9 +72,9 @@ public class LoginActivity extends AppCompatActivity {
         CharSequence text = "";
 
         //Database Connection variables
-        final String url = "jdbc:mysql://ipAddress/database";
-        final String user = "username";
-        final String pass = "password";
+        final String url = "jdbc:mysql://108.255.70.130:3306/roveverywhere";
+        final String user = "rover";
+        final String pass = "glutenfreebrick";
 
         String userName = username.getText().toString();
         String passWord = password.getText().toString();
